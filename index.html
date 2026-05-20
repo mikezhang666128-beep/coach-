@@ -4810,4 +4810,11 @@
   if (state.coachPaired) {
     const cp = document.getElementById('coachPaired');
     if (cp) cp.style.display = 'block';
-    const cc = document.getElementById('coachC
+    const cc = document.getElementById('coachCode');
+    if (cc && state.coachCode) cc.value = state.coachCode;
+  }
+  recalc();
+  updateUI();
+</script>
+</body>
+</html>
